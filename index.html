@@ -4,13 +4,8 @@
 		Learning Material Author: Florian Albrecht - PLUS
 		Learning Material Creation Date: September 2020 to April 2021
 		
-		Rename to "PLUS_EO_Fuer_Hangrutschungen
+		Rename to "PLUS_EO_Fuer_Hangrutschungen-->
 		
-		IMPORTANT NOTICES FOR USERS/AUTHORS: 
-		SECTIONS TO BE EDITED BY AUTHORS ARE INDICATED AS FOLLOWS:  <!-- AUTHORS: DEFINE ... --> 
-<!--	THE COMMANDS <section> and </section>  EMBRACE THE CONTENT FOR EACH SINGLE SLIDE.
-		ALTERNATIVELY, YOU CAN USE MARKDOWN NOTATION TO CREATE YOUR SLIDES. More information: https://github.com/webpro/reveal-md 
-		-->
 		
 		
 <!doctype html>
@@ -47,34 +42,36 @@
 				 <div class = "partnerlogo" style="width: 15%;height : 11%" ></div>		
 				 <div  class = "presentation_title" style=" text-align: center " >Optische Satellitendaten für das Risikomanagement von Hangrutschungen</div>	<!--The title of the presentation appears on each slide-->
 				 <!-- <div  class = "presentation_title" style=" text-align: center " >Optical Earth observation data for landslide risk management</div>	<!--English title-->
-				 
-
-			<!-- AUTHORS: DEFINE METADATA FOR WHOLE SLIDESET HERE: (Dublin Core Metadata format, complemented by BoK-Concepts) >
-				@prefix dc: <http://purl.org/dc/terms/>.
-				@prefix eo4geo: <http://bok.eo4geo.eu/>.
-				<>  	dc:title "EO-derived geospatial information for natural hazards management";
-					dc:creator "Florian Albrecht, University of Salzburg";
-					dc:subject "Copernicus, EO4GEO, WP5, Satellite, Earth Observation, Natural Hazards, Landslides";
-					dc:abstract "This slideset is the basis for a one-day workshop that presents technologies and methods for producing EO-derived geospatial information for use in natural hazards management.";
-					dc:tableOfContents "(1) What is EO?; (2) Benefits of Copernicus; (3) Integration of Jupyter Notebooks; 
-						(4) Integration of Youtube Video; (5) Integration of H5P; (6) Copernicus Services; (7) Reference list;";
-					dc:description "Learning outcomes: Understand the Copernicus ecosystem and services; perform simple analysis with Jupyter Notebook; Understand Copernicus Climate Change Service;";
-					dc:contributor "Eva Missoni, Barbara Hofer";
-					dc:created "2020-06-20";
-					dc:type "InteractiveResource";
-					dc:format "html";
-					dc:language "EN"; 
-					dc:SizeOrDuration "45min"
-					dc:audience "students";
-					dc:educationLevel "EQF 6";
-					dc:source "Existing youtube-video on Copernicus Climate Change Service; existing Jupyter Notebook on "Well switching in Bangladesh"";
-					dc:rightsHolder "Stefan Lang, University of Salzburg";
-					dc:license "CC BY-SA 4.0";
-					dc:relation eo4geo:TA7-5-1;
-					dc:relation eo4geo:TA7-5-2;
-					dc:relation eo4geo:GS3 .	
-								-->
-
+				 					
+			<meta property="dc:title" content="EO-derived geospatial information for natural hazards management" />
+			<meta property="dc:creator" content="Florian Albrecht" /> 
+			<meta property="dc:publisher" content="University of Salzburg" /> 
+			<meta property="dc:subject" content="Copernicus, EO4GEO, WP5, Satellite, Earth Observation" />
+			<meta property="dc:abstract" content="This introductory course in remote sensing and (satellite) image analysis covers the basic analysis workflow. It requires a lecture or any other introductory class in the theoretical fundamentals of remote sensing" />
+			<meta property="dc:tableOfContents" content="(1) Organisational issues and introduction; 
+					(2) Image repositories and data access; 
+					(3) Specifics of image data; 
+					(4) Visualising and exploring image data; 
+					(5) Spatial referencing; 
+					(6) Radiometric correction;
+					(7) Image pre-processing; 
+					(8) Image classification; 
+					(9) Validation; 
+					(10) Publishing results" />
+			<meta property="dc:description" content="Learning outcomes: Understand remote sensing workflow including image acquisition, (pixel-based) image analysis, classification and validation; get to know online portals, data catalogues, and pricing schemes for satellite data; Familiarize with the European Copernicus Earth observation programme; Master standard image analysis routines as implemented in ArcGIS Pro" /> 
+			<meta property="dc:contributor" content="Eva Missoni" />
+			<meta property="dc:created" content="2020-04-20" />
+			<meta property="dc:type" content="teaching material" /> 
+			<meta property="dc:format" content="html" />
+			<meta property="dc:language" content="EN" />
+			<meta property="dc:SizeOrDuration" content="45 min" />
+			<meta property="dc:audience" content="students" />
+			<meta property="dc:educationLevel" content="EQF 6" />
+			<meta property="dc:source" content="Existing training material of the course: Practice: image processing and analysis" />
+			<meta property="dc:rightsHolder" content="Stefan Lang" />
+			<meta property="dc:license" content="https://creativecommons.org/licenses/by-sa/4.0/deed.en" />
+						
+			<link rel="dc:relation" href="eo4geo:IP1-3-2" />
 
 				<div class="slides">
 				
@@ -82,6 +79,7 @@
 				<!-- AUTHORS: DEFINE CONTENT ON YOUR FIRST SLIDE --> 
 				<section >
 					<h1>Optische Satellitendaten für das Risikomanagement von Hangrutschungen</h1>
+					<img src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/01_titelslide.png" alt="Titelfoto" />
 					Online Workshop am 15. April 2021 | 
 					Florian Albrecht, Universität Salzburg
 				<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
@@ -90,23 +88,21 @@
 				</aside>
 				</section>
 				
-				<section >
-					<!-- AUTHORS: DEFINE CONTENT ON YOUR SECOND SLIDE --> 
-					<section>
-						<h2>Allgemeines</h2>
+				<section>
+						<h2>Allgemeines</h2><br>
 						<!-- AUTHORS: CREATE BULLETED LIST: --> 
 						<ul>
-							<li style="color:#337acc;">Der Workshop wird aufgenommen!</li>
-							<li style="color:#337acc;">Bitte denken Sie daran, Ihr Mikrofon auszuschalten.</li>
-							<li style="color:#337acc;">Fragen sind jederzeit möglich und können auch im Chat für die Diskussion gesammelt werden.</li>
+							<li style="color:#337acc;">Der Workshop wird aufgenommen!</li><br>
+							<li style="color:#337acc;">Bitte denken Sie daran, Ihr Mikrofon auszuschalten.</li><br>
+							<li style="color:#337acc;">Fragen sind jederzeit möglich und können auch im Chat für die Diskussion gesammelt werden.</li><br>
 						</ul>
 					<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
 					<aside class="notes">
 						Keine Notizen enthalten.
 					</aside>
-					</section>
+				</section>
 
-					<section >
+				<!--section >
 						<h2>Ziele des Workshops</h2>
 						<ul>
 							<li style="color:#337acc;">Austausch zwischen Wissenschaft und Praxis über Methoden für Hangrutschungsinformationen</li>
@@ -114,82 +110,110 @@
 							<li style="color:#337acc;">Verstehen was GIS-Modelle für Rutschanfälligkeit leisten können</li>
 							<li style="color:#337acc;">Verstehen welche Qualitätsansprüche das Risikomanagement von Hangrutschungen an Informationen stellt, die aus Satellitendaten abgeleitet wurden</li>
 						</ul>
-					<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
-					<aside class="notes">
-						Keine Notizen enthalten.
-					</aside>
-					</section>
+				</section-->
 					
-					<section >
-						<h2>Agenda</h2>
-						<ul>
-							<li style="color:#337acc;">Einleitung, Agenda und Ziele</li>
-							<br>
-							<li style="color:#337acc;">Präsentation #1: Kartierung und Überwachung von Hangrutschungen mit optischen Satellitendaten</li>
-							<li style="color:#337acc;">Diskussion #1: Nutzen für das Risikomanagement</li>
-							<br>
-							<li style="color:#337acc;">Präsentation #2: GIS-Modellierung von Rutschanfälligkeit</li>
-							<li style="color:#337acc;">Diskussion #2: Bedeutung und Nutzen für die Gefahrenzonenplanung</li>
-							<br>
-							<li style="color:#337acc;">Zusammenfassung und Ausblick</li>
+				<section id="Intro">
+					<section>
+						<h2>Agenda</h2><p> 
+						<ul style="color:#337acc;">
+							<li>Einleitung, Agenda und Ziele</li><br>
+							<li>Präsentation #1: Kartierung und Überwachung von Hangrutschungen mit optischen Satellitendaten</li><br>
+							<li>Diskussion #1: Nutzen für das Risikomanagement</li><br>
+							<li>Präsentation #2: GIS-Modellierung von Rutschanfälligkeit</li><br>
+							<li>Diskussion #2: Bedeutung und Nutzen für die Gefahrenzonenplanung</li><br>
+							<li>Zusammenfassung und Ausblick</li>
 						</ul>
-					<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
-					<aside class="notes">
-						Agenda kurz erklären: Workshopdauer, Diskussionen unterstützt mit MURAL.
-					</aside>
+					</section>
+
+					<section>
+							<h2>Kurze Vorstellungsrunde</h2>
+					</section>
+
+					<section>
+						<h2>Projekthintergrund</h2>
+						<div class="monteo" style="align: left; position: absolute; top: 130px; left: 10px; height: 150px;  width: 400px">
+							<img src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/05_monteo.png" alt="Monteo" />
+								<br>	
+								<ul>
+									<li> MontEO – The impact of mass movements on alpine trails and huts assessed by EO data</li><br>  
+									<li><a href=https://monteo.zgis.at>https://monteo.zgis.at</a></li>
+								</ul> <p>
+						</div>
+						<div class="monteo" style="align: left; position: absolute; top: 130px; left: 450px; height: 150px;  width: 450px">
+							<img src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/05_eo4geo.png" alt="EO4GEO_Logo" />
+								<br>	
+								<ul>
+									<li> The Space/Geospatial Sector Skills Alliance</li> 
+									<ul><li>Entwicklung von Schulungen für Erdbeobachtung und Geoinformatik</ul></li><br>
+									<li><a href=http://www.eo4geo.eu/training-actions>http://www.eo4geo.eu/training-actions/</a></li>
+								</ul> <p>
+						</div>
+					</section>
+
+					<section>
+						<h2>Phasen im Katastrophenmanagementzyklus</h2>
+						<figure>
+							<img width="40%" height="40%"src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/06_phasen.png" alt="Phasen" />
+							<figcaption>© F. Albrecht</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h2>Services für Informationen über Hangrutschungenaus Erdbeobachtungsdaten</h2>
+						<figure>
+							<img width="75%" height="75%"src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/07_services.png" alt="Services" />
+							<figcaption>© F. Albrecht</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h2>Z_GIS-Projekte mit Bezug zum Risikomanagement von Hangrutschungen</h2>
+						<figure>
+							<img width="75%" height="75%"src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/08_projekte_bezug_hangrutschungen.png" alt="Services" />
+							<figcaption>© F. Albrecht</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h2>Ziele des Workshops</h2>
+						<figure>
+							<img width="75%" height="75%"src="https://eo4geo.sbg.ac.at/PLUS/EO_for_Landslide_Risk_Management/09_workshopziele.png" alt="Services" />
+							<figcaption>© F. Albrecht</figcaption>
+						</figure>
+						<br><br>
+						<ul style="font-size: 22px;">
+							<li> Austausch zwischen Wissenschaft und Praxis</li> 
+							<li>Diskussion des Potenzials optischer Satellitenbilder für die Dokumentation von Hangrutschungen</li>
+							<li>Diskussion des Potenzials von GIS-Modellen für Rutschanfälligkeit für die Gefahrenzonenplanung</li>
+							<li>Diskussion der Qualitätsansprüche im Risikomanagement von Hangrutschungen</li>
+						</ul>
 					</section>
 				</section>
-				
-				<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
-				<!--<section class="scrollable">
-					<h1>Copernicus</h1> 
-					<br>Copernicus and Galileo are the two flagships of the <em>European Space Policy</em>. Galileo denotes the European satellite navigation system, while Copernicus is the name of the European Earth observation <a href="https://www.copernicus.eu">programme</a>
-					<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
-				</section>
-				
-					<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
-				<!--<section >
-					<h1>Copernicus</h1> 
-					<br>
-					 
-					<br><img  style="width: 100%; max-width: 600px; max-height:600px; height:100%" data-src="resources\2560pxAERONET.jpg" alt="Copernicus allegory">
-					 
-				</section>
-				
-				<!-- AUTHORS: Same content as above - now as example in Markdown language   --> <!-- AUTHORS: for horizontally organised slides, use three dashes ---, for vertical slides two dashes -- -->
-				<!--section data-markdown data-separator="---" data-separator-vertical="--" data-separator-notes="^Note:"> 
-				                    <script type="text/template">
-                        # What is Copernicus?
-                        (A demo slide deck using the Reveal.js framework)
 					
-						
-                        ---
-						
-                        # Copernicus
-                        Copernicus and Galileo are the two flagships of the European Space Policy. Galileo denotes the European satellite navigation system, while Copernicus is the name of the <a href="https://www.copernicus.eu">European Earth observation programme</a>
-						<img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
-						
-						
-						--
-						
-						# Earth observation (EO)
-						EO is one out of three main space assets
-						- SatNav
-                        - SatCom
-						- SatObs (EO)
-						
-						<img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	
-                    </script>
-                </section-->
-				
-			
+				<section>
+					<h2>Präsentation #1</h2><br>
+					<ul style="font-size: 22px;">
+						<li> Einleitung, Agenda und Ziele</li> <br>
+						<li>Präsentation #1: Kartierung und Überwachung von Hangrutschungen mit optischen Satellitenbildern
+							<ul>
+								<li>Potenzial von Satellitenbildern am Beispiel Pongau 2019, Salzburg</li>
+								<li>Satellitensysteme</li>
+								<li>Methoden für die Kartierung von Hangrutschungen</li>
+							</ul> </li>
+						<li>Diskussion #1: Nutzen für die Dokumentation von Hangrutschungen</li><br>
+						<li>Präsentation #2: GIS-Modellierung von Rutschanfälligkeit</li>
+						<li>Diskussion #2: Bedeutung und Nutzen für die Gefahrenzonenplanung</li><br>
+						<li>Zusammenfassung und Ausblick</li>
+					</ul>
+
+				</section>
 				
 				<!-- AUTHORS: DEFINE SECTIONS WITHIN A SECTION TO GET VERTICAL SLIDES:--> 
-				<section id="EO">
+				<!--section id="EO">
 					<section > 
 						<h2>Introduction to EO for natural hazards</h2> 
 						<p><em>Natural hazards</em> are natural phenomena with potential negative effects for the society. </p>
-						<!-- AUTHORS: CREATE BULLETED LIST: --> 
+						
 						<ul>
 							<li style="color:#89b3e479;">Types of hazards</li>
 							<li style="color:#89b3e479;">Statistics for disasters caused by hazards</li>
@@ -200,7 +224,7 @@
 						<br><img width="600" height="316" data-src="http://eo4geo.sbg.ac.at/PLUS/EO_for_Natural_Hazards/Cred_and_UNSDR_2018.png" alt="Number of disasters per type 1998-2017">	
 						<br>
 						<citation>CRED & UNISDR (2018). “Economic Losses, Poverty and Disasters 1998-2017” </citation> <!-- ; https://www.cred.be/sites/default/files/CRED_Economic_Losses_10oct.pdf; https://www.emdat.be -->
-						<aside class="notes">
+						<!--aside class="notes">
 							The overview on natural hazards identifies which hazards there are that can be addressed with EO. 
 							It explains when a hazard situation turns into a disaster. 
 							Disaster management and natural hazards management.
@@ -218,10 +242,7 @@
 						<br><img width="600" height="200" data-src="resources\template_WhatCopernicus\UseGalileo.jpg" alt="sat1">
 						<small>Galileo-enabled smartphones can be used in many different <a href="https://www.usegalileo.eu/">applications</a>.</small> 
 						-->
-						<aside class="notes">
-							landslides.
-						</aside>
-					</section>
+					<!--/section>
 					
 					<section >
 						<h2 style="color:#89b3e479;">Statistics for disasters caused by hazards</h2>
@@ -229,7 +250,7 @@
 						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\SatComIntelsat.jpg" alt="sat1"></a>
 						<small>The satellite as a self-contained communications system, the example of <a href="https://www.intelsatgeneral.com/satellite-basics/">IntelSat</a>.</small>
 						-->
-					</section>
+					<!--/section>
 					
 					<section >
 						<h2 style="color:#337acc;">The disaster management cycle</h2>
@@ -239,7 +260,7 @@
 						<br>
 						<a href="#/EO"> Back to top </a>
 						-->
-					</section>
+					<!--/section>
 					<section>
 						<h2 style="color:#337acc;">Stakehoders of natural hazards management and their tasks to deal with hazards</h2>
 					</section>
@@ -249,15 +270,15 @@
 				</section>
 				
 				<!-- AUTHORS: INCLUDE AN IMAGE IN YOUR SLIDE: --> 
-				<section>
+				<!--section>
 					<section ><h2>EO/GI technologies for monitoring natural hazards</h2>
 						<br>This lecture teaches the EO data concepts and sources and the information processing tools that enable the extraction of natural hazards related information from EO data.
 						<!-- <br><img width="600" height="300" data-src="resources\template_WhatCopernicus\EOlever.jpg" alt="Copernicus allegory"> -->
-						<br>
+						
 						
 						<!-- AUTHORS: ADD REFERENCES TO YOUR resources,... -->
 
-						<aside class="notes">
+						<!--aside class="notes">
 							In the practical second part, the first objective is to make participants aware of different types of EO satellite images (both optical and SAR data) 
 							and related processing methods that are capable of mapping landslides. 
 							The second objective is to make them understand the most essential theoretical background and the functional principles for EO processing. 
@@ -300,7 +321,7 @@
 						<br> This is about using reference data to validate EO results, etc.
 						<br>
 						<!-- <br><a href="#/EO"> Back to top </a> <!-- does not point to the right section yet!--> 
-						<aside class="notes">
+						<!--aside class="notes">
 							the complementary character of EO data
 						</aside>
 					
@@ -320,219 +341,8 @@
 						</ul>
 						<br><img width="400" height="200" data-src="resources\template_WhatCopernicus\sat1.jpg" alt="sat1">
 
-					</section>
-					
-					<section >
-						<h2 style="color:#337acc;">Space component (satellites)</h2>
-						<p>The Sentinel family is the backbone of the Copernicus EO space asset</p>
-						<!-- AUTHORS: CREATE A TABLE: --> 
-						<table>
-							<thead>
-								<tr>
-									<th><small>Satellite</th>
-									<th><small>Sensor</th>
-									<th><small>Type</small></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Sentinel-1</td>
-									<td>SAR</td>
-									<td>radar</td>
-								</tr>
-								<tr>
-									<td>Sentinel-2</td>
-									<td>MSI</td>
-									<td>optical</td>
-								</tr>
-								<tr>
-									<td>Sentinel-3</td>
-									<td>...</td>
-									<td>...</td>
-								</tr>
-								<tr>
-									<td>Sentinel-5</td>
-									<td>...</td>
-									<td>...</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section >
-						<h2 style="color:#33b5cc;">Ground segment</h2>
-						<p>The Copernicus integrated ground segment includes</p>
-						<ul>
-							<li>Receiving stations</li>
-							<li>Satellite data storage systems</li>
-							<li>In-situ observation network</li>
-						</ul>
-						<br>
-					</section>
-
-				</section>
-
-				<section >
-					<h3>beyond space assets and data</h3>
-					<br>The fundamental objective of Copernicus is to support <em>global policies and conventions</em> as well as <em>EU regulations and directives</em> with a defined portfolio of geospatial information services.
-				</section>
-				
-				<!-- AUTHORS:   Option to Jupyter Notebook (Python) AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): --> 
-				<section data-background-iframe="https://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/ARM/ch5/arsenic_wells_switching.ipynb">
-				</section>
-				
-				<!-- AUTHORS: 1st Option to INCLUDE H5P CONTENT AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): --> 
-				<section data-background-iframe="https://ideaslab.sbg.ac.at/ideaslab/wp-admin/admin-ajax.php?action=h5p_embed&id=5">
-				</section>
-				
-				<!-- AUTHORS: 2nd Option to INCLUDE H5P CONTENT AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): -->
-				<section class="scrollable"> 
-					 <iframe src="https://ideaslab.sbg.ac.at/ideaslab/wp-admin/admin-ajax.php?action=h5p_embed&id=5" width="1481" height="1280" frameborder="0" allowfullscreen="allowfullscreen"></iframe></script>
-					</section>
-				<!--AUTHORS: Integration of Jupyter Notebooks from VITO-Platform - user authentification not solved yet -->
-				<!--section class="scrollable"> 
-					 <iframe src="https://notebooks.vgt.vito.be/user/emissoni/lab/tree/PLUS_Test.ipynb" width="1481" height="1280" frameborder="0" allowfullscreen="allowfullscreen"></iframe></script>
-				</section-->	
-					
-				
-				
-				<section >
-				<!-- AUTHORS: make long content scrollable --> 
-					<section class="scrollable">
-						<h2>Copernicus services</h2>
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
-						
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
-						
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>							
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
-
-					</section>
-						<section>
-						<img width="150" height="60" data-src="resources\template_WhatCopernicus\CLMS_logo.png" alt="six services">
-						<h2 style="color:#33cc80;">Land monitoring (CLMS)</h2>
-						<p>Copernicus is a European system for monitoring the Earth.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CLand.png" alt="six services">
-						<small>The four Copernicus land monitoring <a href="https://land.copernicus.eu">service</a> components</small>
-					</section>
-					<section>
-						<img width="100" height="100" data-src="resources\template_WhatCopernicus\CMEMS_logo.png" alt="six services">
-						<h2 style="color:#33adcc;">Ocean monitoring (CMEMS)</h2>
-						<p>The Copernicus Marine Environment Monitoring Service focuses on the global ocean.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CMarine.png" alt="six services">
-						<small>The Copernicus marine monitoring <a href="http://marine.copernicus.eu/services-portfolio/access-to-products">service</a> portfolio</small>
-					</section>
-					<section>
-						<img width="250" height="80" data-src="resources\template_WhatCopernicus\CAMS_logo.png" alt="six services">
-						<h2 style="color:#33adcc8c;">Atmosphere monitoring (CAMS)</h2>
-						<p>The Copernicus Marine Environment Monitoring Service focuses on the global ocean.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CAtm.png" alt="six services">
-						<small>The Copernicus atmosphere monitoring <a href="https://atmosphere.copernicus.eu/catalogue#/">service</a> portfolio</small>
-					</section>
-					<section>
-						<h2 style="color:#cc4533d3;">Climate change</h2>
-						<p>...</p>
-					</section>
-					<section>
-						<h2 style="color:#caae60b9;">Emergency management</h2>
-						<p>...</p>
-						<br>
-					</section>
-					<section>
-						<h2 style="color:#33adcc49;">Human security</h2>
-						<p>...</p>
-						<br>
-					</section>
-				</section>
-
-				<section >
-					<section >
-						<h2>The Copernicus ecosystem</h2>
-						<p>Copernicus engages different <em>actor groups</em>.</p>
-						<ul>
-							<li style="color:#bbb7a8;">Data providers</li>
-							<li style="color:#c5b2ca8f;">Service providers</li>
-							<li style="color:#cc5733;">Users and stakeholders</li>
-						</ul>
-						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\UserUptake.png" alt="User uptake">
-					</section>
-					
-					<section>
-						<h2 style="color:#bbb7a8;">Data providers</h2>
-						<p>Next to the Sentinel satellites there is a series of contributing missions, including commercial providers of very high (spatial) resolution (VHR)  data.</p>
-						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\SatSubmeter.png" alt="Worldview-2">
-					</section>
-					
-					<section>
-						<h2 style="color:#c5b2ca8f;">Service providers</h2>
-						<p>...</p>
-						<br>
-					</section>
-					
-					<section>
-						<h2 style="color:#cc5733;">Users and stakeholders</h2>
-						<p>...</p>
-						<br>
-					</section>
-				</section>
-				
-				<!-- AUTHORS: CREATE YOUR LIST OF REFERENCES HERE: -->
-				<section> 
-				<h2> Reference list </h2>
-				<br>
-				<reference_list>exemplary doi:<br><br>
-				Barbara Hofer (2018). Innovation in geoprocessing for a Digital Earth. International Journal in Digital Earth.
-				<br>
-				<a href="https://doi.org/10.1080/17538947.2017.1379154">10.1080/17538947.2017.1379154</a>
-				</reference_list>
-				</section>
-				
+					</section-->
+		
 				
 				<section>Slide show ends</section>
 			
